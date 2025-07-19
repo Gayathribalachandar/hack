@@ -1,0 +1,103 @@
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* start instead of center for "Today's Task" */
+  padding-top: 100px;
+  gap: 2rem;
+  background-image: url('/images/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subheading {
+  font-size: 10rem;
+  color: red; /* Use dark color for visibility */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  align-self: flex-start;
+  background:yellow;
+  z-index:2;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  width: 100%;
+  margin-top:2rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 100px;
+  background: white;
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  color: white;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  
+}
+
+.cardContent {
+  flex-grow: 1;
+}
+
+.cardContent h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.cardContent p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color:black;
+}
+
+.cardContent button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cardContent button:hover {
+  background-color: #005ec2;
+}
+
+
+.card:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+
+@keyframes studBGGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

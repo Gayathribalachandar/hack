@@ -1,0 +1,102 @@
+.wrapper {
+  padding: 5rem 2rem;
+  background: url('/images/back2.jpg');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.expanded {
+  width: 500px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border:2px solid black;
+}
+
+.details h2 {
+  margin: 0.5rem 0 0.2rem;
+  color: #333;
+}
+
+.details p {
+  margin: 0 0 1rem;
+  color: #666;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0.8rem;
+}
+
+.pinBtn {
+  background-color: #e1ecf4;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  color: #0366d6;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.feedbackBox {
+  width: 100%;
+}
+
+.feedbackBox textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  resize: vertical;
+  margin-bottom: 0.5rem;
+}
+
+.feedbackBox button {
+  padding: 0.5rem 1.2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

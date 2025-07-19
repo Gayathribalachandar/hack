@@ -1,0 +1,113 @@
+.wrapper {
+  padding: 6rem 2rem 2rem;
+  min-height: 100vh;
+  color: white;
+  background-image: url('/images/back2.jpg'); /* 👈 Ensure this file exists in public/images */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Remove gradient animation */
+/* @keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
+
+.heading {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: white; /* white overlay for readability */
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.content h3 {
+  margin: 0 0 0.5rem;
+  color: #2d3436; /* dark gray heading */
+}
+
+.content p {
+  margin: 0 0 1rem;
+  color: #2d3436;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.accept {
+  background-color: #27ae60;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #27ae60aa;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.accept:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+.reject {
+  background-color: #c0392b;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #e74c3caa;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.reject:hover {
+  background-color: #e74c3c;
+  transform: scale(1.05);
+}
+
+.empty {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}

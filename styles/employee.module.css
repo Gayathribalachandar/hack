@@ -1,0 +1,98 @@
+.wrapper {
+  padding: 6rem 2rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/images/back2.jpg'); /* Place your image in public/images/bg.jpg */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.tableWrapper {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 1.5rem;
+}
+
+.searchInput {
+  width: 800px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.addButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.table {
+  width: 70%;
+  border-collapse: collapse;
+  background: white;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 0.9rem 1.2rem;
+  font-size: 1.08rem;
+  text-align: center;
+  color: black;
+ 
+}
+
+.table th {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.editBtn {
+  background-color: #f39c12;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}

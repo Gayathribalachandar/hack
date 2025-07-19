@@ -1,0 +1,49 @@
+.wrapper {
+  padding: 5rem 2rem;
+  background: url('/images/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.table {
+  width: 65%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.6); /* darker transparent background */
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  backdrop-filter: blur(8px);
+  
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.table thead {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table td:first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+}

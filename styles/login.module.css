@@ -1,0 +1,132 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('/backgrounds/back1.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.formContainer {
+  background: rgba(247, 249, 250, 0.1); /* slightly more transparent */
+  backdrop-filter: blur(15px); /* stronger blur for depth */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  border-radius: 20px;
+  padding: 2rem;
+  width: 325px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* thin white border */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); /* deeper shadow */
+}
+
+
+.formContainer h2 {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.input {
+  width: 88%; /* Make it full width */
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+.googleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 10px;
+  width: 95%; /* Match the input field width */
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+.input::placeholder {
+  color: black;             /* Bright/white placeholder */
+  opacity: 1;
+  font-weight: 60;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4); /* Optional: glow for readability */
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.eyeButton {
+  position: absolute;
+  background: none;
+  border: none;
+  right: 25px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0;
+}
+
+.loginButton{   
+  width: 50%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.loginButton {
+  background: rgba(0, 123, 255, 0.8);
+  color: white;
+}
+
+.loginButton:hover {
+  background: rgba(0, 123, 255, 1);
+}
+
+.divider {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.googleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: white;
+  color:black;
+  border: 1px solid #ccc;
+}
+
+.googleIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
